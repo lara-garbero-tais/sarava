@@ -2,8 +2,6 @@
 
 """Tools to parse prayers to northern Brazilian Quimbanda deities in the
 original Portuguese and return a summary of purpose and content in English.
-
-To be implemented: Lines, purpose (petition, thanksgiving), noble titles, tags.
 """
 
 from unicodedata import normalize
@@ -95,9 +93,6 @@ def get_probable_protagonist(mentions):
 	else:
 		return None
 
-	# TODO: Prevent spelling variants to compute as multiple entries
-	# Implement smarter choice for draws
-
  
 def get_kingdom(prayer):
 
@@ -117,8 +112,6 @@ def get_kingdom(prayer):
 
 	return kingdom
 
-	# TODO: Write multi-kingdom variant
-
 
 def get_verbose(deity):
 
@@ -135,7 +128,6 @@ def get_verbose(deity):
 
 	return description
 
-	# TODO: Capitalize output
 
 
 def extract_information(prayer):
